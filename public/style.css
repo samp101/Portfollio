@@ -1,0 +1,192 @@
+html body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    
+}
+section{
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    font-family: 'Gentium Plus', serif;
+    font-family: 'Poppins', sans-serif;
+}
+#intro{
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#intro img{
+    position: absolute;
+    top:30px;
+    /* left: 30px; */
+}
+#greetings{
+
+    align-self: flex-end;
+    font-size: 50vh ;
+    font-weight: 800;
+    color: #f1f2; 
+}
+#my-intro {
+    /* margin-top: 100px; */
+    position: static;
+    z-index: 1;
+    /* font-size: 50px; */
+}
+#my-intro p {
+    margin: 0px;
+}
+#portfollio{
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+}
+#work1,#work2,#work3{
+    transition: 1s;
+    width: 100%;
+    height:300px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 50px; 
+    
+}
+#work1:hover,#work2:hover,#work3:hover{
+    transition: 2s;
+    transform: scale(1.1);
+
+}
+#portfollio img{
+     /* width: 400px; */
+    height: auto;
+    border-radius: 20px;
+}
+.work-text{
+    /* width: 50%; */
+
+}
+#portfollio span{
+    /* margin: 0px;
+    font-size:50px; */
+}
+#about-me{
+    /* height: 100vh;
+    justify-content: center;
+    align-items: center; */
+    
+}
+#about-me-art{
+
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+
+}
+#about-me-art #blurb{
+    width: 30vw; 
+}
+#dov{
+    width: 100%;
+}
+#about-me-art div{
+    text-align: center;
+    align-items:flex-end;
+    flex-direction: column;
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30vh;
+ }
+
+
+@media all and (max-width: 375px) {
+    #intro{
+        height: 100vh;
+        width: 100%;
+    }
+    #greetings{
+        writing-mode:vertical-lr;
+        /* font-weight: 800; */
+        color: #f1f2;  
+        font-size: calc(200px + 0.390625vw);
+
+        line-height: 0px;
+        position: absolute;
+        top:30px;
+        left:30%;
+    }
+    
+    #intro img{
+        position: absolute;
+        top:30px;
+        right: 10%;
+    }
+    #my-intro {
+        /* position: static; */
+        position: absolute;
+        bottom: 20px;
+        left:10px;
+        font-size: 25px;
+        z-index: 2;
+    }
+    #portfollio{
+        margin-top: 50px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 100%; 
+        height: 175vh;
+    }
+    #work1,#work2,#work3{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #portfollio span{
+        margin: 0px;
+        font-size:20px;
+    }
+    #my-buger-Info,#hack-1,#hack-2{
+        display: none;
+    }
+    #my-burger-img,#hack-1-img,#hack-2-img{
+        width:  90%;
+    }
+    #about-me{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about-me-art{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 80%;
+        
+    }
+    #blurb{
+        /* width:60%; */
+    }
+ 
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
