@@ -71,16 +71,11 @@ section{
     justify-content: center;
     margin-bottom: 20px;
 }
-#work1 a {
+.work-a{
     display: flex;
     align-items:center;
     justify-content: center;
     text-decoration: none;
-}
-#work2 a {
-    display: flex;
-    align-items:center;
-    justify-content: center;
 }
 #portfollio span{
     margin: 0px;
