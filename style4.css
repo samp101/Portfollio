@@ -183,6 +183,9 @@ main{
         width:80%
         
     }
+    #my-intro{
+        bottom: clamp(28vh,1vw,32vh);
+    }
     #intro img{
         width:9vw;
         left: 0px;
@@ -196,7 +199,7 @@ main{
         width:7vw;
     }
     #my-intro{
-        bottom: clamp(25vh,5vw,30vh);
+        bottom: clamp(20vh,1vw,25vh);
     }
 }
 
