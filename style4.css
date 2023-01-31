@@ -122,7 +122,7 @@ main{
     #my-intro {
         /* position: static; */
         position: absolute ;
-        bottom: clamp(30vh,5vw,35vh);
+        bottom: clamp(36vh,1vw,38vh);
         left:8vw;
         font-weight: 700;
         font-size: 3vw;
@@ -135,8 +135,10 @@ main{
 @media all and (min-width: 768px)  {
     
     #intro img{
-        width: 13vw;
-        
+        width: 13vw;   
+    }
+    #my-intro{
+        bottom: clamp(30vh,5vw,35vh);
     }
     #portfollio{
         /* flex-direction: unset; */
@@ -189,9 +191,12 @@ main{
         left: 0px;
     }
 }
-@media all and (min-width: 1000px) { 
+@media all and (min-width: 1024px) { 
     #intro img{
         width:7vw;
+    }
+    #my-intro{
+        bottom: clamp(25vh,5vw,30vh);
     }
 }
 
