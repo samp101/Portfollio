@@ -14,7 +14,7 @@ main{
 #greetings{
     writing-mode:vertical-lr;
     font-weight: 800;
-    letter-spacing: 4vh;
+    letter-spacing: 2vh;
     color: #f3f3f3;  
     font-size: 30vh ;
     /* background-color: aqua; */
@@ -46,6 +46,7 @@ main{
     align-items: center;
     flex-direction: column;
     width: 100%; 
+    margin-top:30px;
     /* height:180vh; */
     /* min-height: 150vh; */
 }
@@ -57,6 +58,8 @@ main{
     /* width:300px; */
     max-width:  100%;
     max-height: 100%;
+    border: black solid 1px;
+    margin-bottom: 30px;
 }
 
 #about-me{
@@ -64,6 +67,7 @@ main{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    height: 100vh;
 }
 #about-me-art{
     display: flex;
@@ -87,7 +91,7 @@ main{
 
 }
 
-@media all and (min-width: 425px)  {
+@media all and (min-width: 425px) {
     #intro{
         /* background-color:red; */
         position: relative;
@@ -95,6 +99,7 @@ main{
         justify-content: center;
         align-items: center;
     }    
+    
     #greetings{
         writing-mode:horizontal-tb;
         font-weight: 800;
@@ -112,7 +117,7 @@ main{
         left:0px; */
     }
     #intro img{
-        width: 10vw;
+        width: 15vw;
         position: absolute;
         top:30px;
         left: 10%;
@@ -120,7 +125,7 @@ main{
     #my-intro {
         /* position: static; */
         position: absolute ;
-        bottom: 20vw;
+        bottom: clamp(20px,1vw,40vw);
         left:8vw;
         font-weight: 700;
 
@@ -129,3 +134,53 @@ main{
     
     }
 }
+
+
+@media all and (min-width: 768px)  {
+    
+    #intro img{
+        width: 13vw;
+        
+    }
+    #portfollio{
+        /* flex-direction: unset; */
+
+        justify-content: center ;
+        align-items:space-evenly;
+        
+        width: 100%; 
+        margin-top:30px;
+        /* height:100vh; */
+        min-height: 100vh;
+    }
+    #article-cont{
+
+        width: 100%; 
+        display: flex;
+        justify-content: space-evenly ;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .projects{
+        margin-top: 50px;;
+        max-width:45%;
+    }
+    .project-img{
+        /* width:300px; */
+        width:100%;
+        /* max-width:  45%; */
+        max-height: 100%;
+        border: black solid 1px;
+        margin-bottom: 30px;
+    }
+
+ }
+@media all and (min-width: 900px) { 
+    #intro{
+    
+    }
+    #intro img{
+        width:10vw;
+    }
+}
+
