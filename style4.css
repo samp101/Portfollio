@@ -17,8 +17,6 @@ main{
     letter-spacing: 2vh;
     color: #f3f3f3;  
     font-size: 30vh ;
-    /* background-color: aqua; */
-
     line-height: 30vh;
     position: absolute;
     top:20px;
@@ -28,6 +26,7 @@ main{
     position: absolute;
     top:30px;
     right: 10%;
+
 }
 #my-intro {
     /* position: static; */
@@ -77,6 +76,10 @@ main{
     height: 100%;
     
 }
+#about-me-img{
+    width: 150px;
+}
+
 #blurb{
     width:60%;
     text-align: center;
@@ -103,21 +106,15 @@ main{
     #greetings{
         writing-mode:horizontal-tb;
         font-weight: 800;
-
         letter-spacing: 1vh;
         color: #f3f3f3;  
         font-size: 30vw ;
-        
-        /* background-color: aqua; */
-    
         line-height: 45vh;
         top: unset;
         left: unset;
-        /* bottom:40px;
-        left:0px; */
     }
     #intro img{
-        width: 15vw;
+        width: 20vw;
         position: absolute;
         top:30px;
         left: 10%;
@@ -125,10 +122,9 @@ main{
     #my-intro {
         /* position: static; */
         position: absolute ;
-        bottom: clamp(20px,1vw,40vw);
+        bottom: clamp(20vh,5vw,40vh);
         left:8vw;
         font-weight: 700;
-
         font-size: 3vw;
         z-index: 2;
     
@@ -176,11 +172,26 @@ main{
 
  }
 @media all and (min-width: 900px) { 
+    main{
+        display: flex;
+        flex-direction: column;
+    }
     #intro{
-    
+        align-self:center;
+        width:80%
+        
     }
     #intro img{
-        width:10vw;
+        width:9vw;
+        left: 0px;
+    }
+    #my-intro{
+        left: 0px;
+    }
+}
+@media all and (min-width: 1000px) { 
+    #intro img{
+        width:7vw;
     }
 }
 
