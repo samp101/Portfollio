@@ -127,6 +127,19 @@ main{
         font-weight: 700;
         font-size: 3vw;
         z-index: 2;
+    }
+    #my-intro span:after{
+        
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 60%;
+    left: -20px;
+    top: 40%;
+    border-top: 10px solid #0bd7ae ;
+    /* border-bottom: 10px solid #0bd7ae ; */
+    /* border-right: 1px solid #0bd7ae ; */
+    border-radius: 50%;
     
     }
 }
@@ -139,6 +152,14 @@ main{
     }
     #my-intro{
         bottom: clamp(30vh,5vw,35vh);
+    }
+    .projects{
+        transition: 1s;
+    }
+    .projects:hover{
+        transition: 2s;
+        transform: scale(1.1);
+    
     }
     #portfollio{
         /* flex-direction: unset; */
@@ -199,7 +220,7 @@ main{
         width:7vw;
     }
     #my-intro{
-        bottom: clamp(20vh,1vw,25vh);
+        bottom: clamp(12vh,1vw,18vh);
     }
 }
 
