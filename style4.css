@@ -206,6 +206,7 @@ main{
     }
     #cont{
         align-self:center;
+        margin-left: 100px;
         
     }
 
@@ -214,27 +215,6 @@ main{
     }
 
  }
-@media all and (min-width: 900px) { 
-    /* main{
-        display: flex;
-        flex-direction: column;
-    }
-    #intro{
-        align-self:center;
-        width:80%
-        
-    }
-    #my-intro{
-        bottom: clamp(28vh,1vw,32vh);
-    }
-    #intro img{
-        width:9vw;
-        left: -8%;
-    }
-    #my-intro{
-        left: 0px;
-    }
-} */
 @media all and (min-width: 1024px) { 
     #intro{
         position: relative;
@@ -279,6 +259,7 @@ main{
     border-radius: 50%;
     }
     #blurb{
+        font-weight: 400;
         font-size: 1.5rem;
     }
     /* #intro img{
@@ -298,7 +279,8 @@ main{
 
 @media all and (min-width: 1440px){ 
     #my-intro {
-        bottom: 18vh
+        bottom: 18vh;
+        /* background-color:red; */
     }
     .projects{
         margin-bottom: 4%;
@@ -306,6 +288,7 @@ main{
     }
     #blurb{
         /* font-size: 2rem; */
+        max-width: 80%;
     }
     
 }
