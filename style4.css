@@ -48,9 +48,9 @@ main{
     font-weight: 700;
     font-size: 25px;
     z-index: 2;
-    animation: 3s slide-right;
+    animation: 3.5s slide-right;
 }
-  @keyframes slide-left {
+  @keyframes slide-right {
     from {
       margin-left: -100%;
     }
