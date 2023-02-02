@@ -278,6 +278,9 @@ main{
     border-top: 10px solid #0bd7ae;
     border-radius: 50%;
     }
+    #blurb{
+        font-size: 1.5rem;
+    }
     /* #intro img{
         width:7vw;
     
@@ -298,11 +301,16 @@ main{
         bottom: 18vh
     }
     .projects{
-        
-        max-width:730px;
+        margin-bottom: 4%;
+        max-width:35%
     }
+    #blurb{
+        /* font-size: 2rem; */
+    }
+    
 }
-@media all and (min-width: 2560px) { 
+@media all and (min-width: 2560px) {
+
     #my-intro {
         bottom: 10vh
     }
