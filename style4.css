@@ -315,9 +315,8 @@ main{
     
 }
 @media all and (min-width: 2560px) {
-
     #my-intro {
-        bottom: 10vh
+        bottom: 8vh
     }
 }
 
