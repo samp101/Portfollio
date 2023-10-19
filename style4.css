@@ -315,13 +315,13 @@ main{
     /* #intro img{
         width:7vw;
     
-    }
+    }*/
     .projects{
         margin-top: 50px;;
         max-width:35%;
         margin-bottom: 3.3%;
     }
-    #my-intro{
+    /* #my-intro{ 
         bottom: clamp(12vh,1vw,18vh);
     } */
 }
