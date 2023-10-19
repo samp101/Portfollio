@@ -155,7 +155,31 @@ main{
 }
 
 
+@media all and (max-width: 300px)  {
+    
+    #greetings{
+        writing-mode:vertical-lr;
+        font-weight: 800;
+        letter-spacing: 1vh;
+        color: #f3f3f3;  
+        font-size: 21vh ;
+        line-height: 25vh;
+        position: absolute;
+        top:20px;
+        left:0%;
+    }
+    #my-intro span:after{   
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 60%;
+        left: 0px;
+        top: 25%;
+        border-top: 5px solid #0bd7ae;
+        border-radius: 30%;
+        }
 
+ }
 
 @media all and (min-width: 768px)  {
     
