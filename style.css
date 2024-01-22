@@ -39,7 +39,6 @@ main{
     width: 30%;
 }
 #my-intro {
-    /* position: static; */
     font-family: 'Poppins';
     position: absolute;
     bottom: 20px;
@@ -66,8 +65,6 @@ main{
     left: 0px;
     top: 35%;
     border-top: 5px solid #0bd7ae;
-    /* border-radius: 30%; */
-
     border-top-right-radius: 30%;
     border-bottom-right-radius: 30%;
     border-top-left-radius: 10%;
@@ -80,8 +77,6 @@ main{
     flex-direction: column;
     width: 100%; 
     margin-top:30px;
-    /* height:180vh; */
-    /* min-height: 150vh; */
 }
 .work-text{
     display: none;
@@ -96,8 +91,6 @@ main{
     width: 90%;
     margin-bottom: 30px;
 }
-
-
 
 .slider:nth-child(odd) {
     animation: 1s ease-out 0s 1 slideRight;
@@ -234,7 +227,6 @@ main{
         align-items:space-evenly;
         width: 100%; 
         margin-top:10px;
-        /* min-height: 100vh; */
     }
     #article-cont{
 
@@ -251,9 +243,7 @@ main{
         max-width:45%;
     }
     .project-img{
-        /* width:300px; */
         width:100%;
-        /* max-width:  45%; */
         max-height: 100%;
         margin-bottom: 30px;
     }
@@ -326,6 +316,96 @@ main{
     border-top: 10px solid #0bd7ae;
     border-radius: 50%;
     }
+    #anchor-arrow {
+        text-decoration: none;
+        color: #000;
+    }
+
+    #arrow {
+        opacity: 0;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 30px;
+        animation: cssAnimation 2s linear 3.5s forwards;
+    }
+
+    @keyframes cssAnimation {
+        0% {
+            opacity: .1;
+            visibility: visible;
+        }
+
+        50% {
+            opacity: .6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .check-work {
+        margin-bottom: 10px;
+    }
+
+    #point-border {
+        border: 3px solid #f3f3f3;
+        background-color: #f3f3f3;
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        bottom: 50px;
+        left: 47px;
+        animation: arrow-animation 3s cubic-bezier(0.02, 0.04, 0.42, 1.19) 0s infinite forwards;
+
+    }
+
+    #point {
+        position: absolute;
+        bottom: 65px;
+        left: 30px;
+    }
+
+    @keyframes arrow-animation {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    #arrow #point::before,
+    #arrow #point::after {
+        height: 24px;
+        content: '';
+        background-color: #000;
+        border: 3px solid #000;
+        border-radius: 100px;
+        top: 25px;
+        position: absolute;
+    }
+
+    #point::before {
+        left: -8px;
+        transform: rotate(-55deg);
+    }
+
+    #point::after {
+        left: 8px;
+        transform: rotate(55deg);
+    }
     #blurb{
         font-weight: 400;
         font-size: 1.5rem;
@@ -348,14 +428,12 @@ main{
 @media all and (min-width: 1440px){ 
     #my-intro {
         bottom: 18vh;
-        /* background-color:red; */
     }
     .projects{
         margin-bottom: 4%;
         max-width:35%
     }
     #blurb{
-        /* font-size: 2rem; */
         max-width: 80%;
     }
     
