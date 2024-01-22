@@ -1,5 +1,4 @@
 main{
-    /* height:100vh; */
     font-family: 'Gentium Plus', serif;
     font-family: 'Poppins', sans-serif;
 
@@ -7,9 +6,7 @@ main{
 #intro{
     width:100%;
     height: 100vh;
-
 }
-
 
 #greetings{
     writing-mode:vertical-lr;
@@ -345,10 +342,6 @@ main{
         }
     }
 
-    .check-work {
-        margin-bottom: 10px;
-    }
-
     #point-border {
         border: 3px solid #f3f3f3;
         background-color: #f3f3f3;
@@ -358,9 +351,11 @@ main{
         bottom: 50px;
         left: 47px;
         animation: arrow-animation 3s cubic-bezier(0.02, 0.04, 0.42, 1.19) 0s infinite forwards;
-
+    
+        &:hover{
+            animation-play-state: paused;
+        }
     }
-
     #point {
         position: absolute;
         bottom: 65px;
